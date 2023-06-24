@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 68.5%;
+    /* font-family: ; */
+    /* font-family: "Courier New", Courier, monospace; */
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  :root {
+    --background-color-1: #e0e2e5;
+    --background-color-2: #e6e6e6;
+    --primary-color: #5c5c5c;
+    --secondary-color: #39cccc;
+    --tertiary-color: #288f8f;
+    --fourth-color: #000;
+    --option-input: #fff;
+    --option-border: rgba(40, 143, 143, 0.3);
+    --filler-color: #bfdddd;
+  }
+  body {
+    background-color: var(--background-color-1);
+  }
+  /*----------------------------------Header--------------------------*/
+  
+  /*----------------------------------Navigation--------------------------*/
+  nav {
+    width: 100%;
+    background-color: var(--background-color-1);
+    padding-top: 0.5rem;
+  }
+  .navigation {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    /* gap: 67rem; */
+    color: var(--primary-color);
+    /* background-color: aqua; */
+    position: relative;
+  }
+  /*----------------------------------Left Navigation--------------------------*/
+  .nav_left {
+    display: flex;
+    font-size: 2.3rem;
+    gap: 4rem;
+    align-items: center;
+    /* order: -1; */
+  }
+  .logo_text {
+    position: relative;
+    /* margin-top: 0.5rem; */
+    margin-right: 12rem;
+    width: 10rem;
+  }
+  .cs_text {
+    color: var(--fourth-color);
+    position: absolute;
+    top: 2.2rem;
+    width: 20rem;
+    margin-left: 1rem;
+  }
+  .cs_text .color_diff {
+    color: var(--secondary-color);
+  }
+  .cs_logo {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .hover_effect {
+    /* border-bottom: 2px solid black; */
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    /* trans */
+  }
+  .hover_effect:hover {
+    border-bottom: 1px solid var(--tertiary-color);
+  }
+  /*----------------------------------Right Navigation--------------------------*/
+  .nav_right {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* flex-wrap: wrap; */
+    /* order: 1; */
+  }
+  .user_dp_section {
+    display: flex;
+  }
+  .user_dp {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .user_dp_section svg {
+    color: var(--primary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.2rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+  }
+  .bulb {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 4rem;
+    cursor: pointer;
+  }
+  .notification {
+    /* padding-top: 1.5rem; */
+    margin-right: 4rem;
+    cursor: pointer;
+  }
+  .notification svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  /* body {
+    background-color: #333333;
+  }
+  h1 {
+    color: #00796b;
+  }
+  h2 {
+    color: #ff9800;
+  } */
+  /*--------------------------------------Search Area--------------------*/
+  .search_area {
+    /* background-color: #e0e2e5; */
+    /* height: 9rem; */
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--background-color-2);
+    color: var(--fourth-color);
+    padding-bottom: 2rem;
+  }
+  .search_content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .search_bar input {
+    width: 35rem;
+    height: 2.8rem;
+    border: 2px solid var(--option-border);
+    color: var(--fourth-color);
+    background-color: var(--option-input);
+  }
+  .search_bar svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--fourth-color);
+    padding-top: 0.5rem;
+    cursor: pointer;
+    /* margin-top: 0.5rem; */
+  }
+  /*--------------------------------------Search Content--------------------*/
+  .search_text {
+    margin-top: 2rem;
+  }
+  .search_text h1 {
+    font-size: 2rem;
+    color: var(--fourth-color);
+    margin-bottom: 1.5rem;
+    /* width: 15.5rem;
+    border-bottom: 2px solid #288f8f; */
+  }
+  .search_text h2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    /* margin-left: 3rem; */
+  }
+  .search_keywords,
+  .total_results {
+    color: var(--fourth-color);
+    /* color: #39cccc; */
+  }
+  
