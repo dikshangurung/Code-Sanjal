@@ -125,3 +125,218 @@
     width: 3.5rem;
     height: 3.5rem;
   }
+
+  /*-----------------------------------------main page--------------------------------*/
+
+main {
+    padding: 0 2rem 2rem 20rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .title-section,
+  .code-section,
+  .description-section,
+  .output-section {
+    margin: 0.6rem;
+  }
+  
+  h3 {
+    margin: 0.6rem;
+  }
+  
+  .post-details {
+    margin: 0.6rem;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ---------------------------code-section---------------------- */
+  pre {
+    margin: 1.2rem;
+    background-color: #f2f2f2;
+    padding: auto;
+    overflow-x: auto;
+  }
+  
+  .code-language {
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+  
+  .code-box {
+    position: relative;
+    background-color: #48cdcd;
+    top: -1.2rem;
+    height: 3.5rem;
+  }
+  
+  .copy-button {
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    padding: 0.3rem 0.9rem;
+    background-color: #48cdcd;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  /* ----------------------------description-section--------------------- */
+  .description {
+    font-size: 1.4rem;
+    margin: 1.3rem 1.3rem 1.3rem 2.5rem;
+  }
+  
+  li {
+    padding: 0.3rem;
+  }
+  
+  /* -------------------------------output-section------------------------ */
+  .output {
+    font-family: monospace;
+    font-size: 1.3rem;
+  }
+  
+  /*--------------------------------------Footer--------------------*/
+  footer {
+    background-color: var(--background-color-2);
+    width: 100%;
+    color: var(--fourth-color);
+    /* height: 2rem; */
+  }
+  .foot {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    gap: 10rem;
+    margin-bottom: 1rem;
+    /* justify-content: flex-end; */
+  }
+  .contact_info {
+    display: flex;
+    gap: 2rem;
+    /* cursor: pointer; */
+  }
+  .footer_info {
+    cursor: pointer;
+  }
+  .footer_info:hover {
+    border-bottom: 2px solid black;
+  }
+  .foot .country {
+    align-self: flex-end;
+    /* justify-content: space-between; */
+  }
+  
+  /* ----------------------------Comment and voting section-------------- */
+  /* Styles for Voting Buttons */
+  .voting-comment-section {
+    display: flex;
+    margin-left: 89rem;
+  }
+  
+  .voting-comment-section button {
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  #up-logo,
+  #down-logo,
+  #comment-logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  /* Styles for comment section */
+  .comment-section {
+    margin: 1.5rem 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .comment-section form {
+    margin: 0.6rem;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.06rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    resize: none;
+  }
+  
+  .comment-section input[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--secondary-color);
+    color: #ffff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .comment-section input[type="submit"]:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  .comment-view {
+    border: 0.03rem solid #d8d8d8;
+    border-radius: 0.5rem;
+    background-color: #e2dfdf;
+    margin-top: 0.5rem;
+  }
+  .comments {
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin: 0.5rem 0.5rem;
+    background-color: #fff;
+    font-size: 0.7rem;
+  }
+  
+  .img_section {
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.7rem;
+  }
+  
+  .profile-name {
+    position: relative;
+    top: -2.1rem;
+    left: 0.8rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .comment-display {
+    font-size: 1.2rem;
+    margin-top: -1.2rem;
+    margin-left: 4.6rem;
+  }
+  
+  .comment-section-voting {
+    display: flex;
+    margin-left: 90rem;
+  }
+  .comment-section-voting button {
+    border: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .up-logo,
+  .down-logo,
+  .comment-logo {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+  
