@@ -45,7 +45,7 @@ body {
   
   .button-section input[type="submit"],
   .button-section input[type="button"] {
-    background-color: #4CAF50;
+    background-color:  #39cccc;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -56,6 +56,6 @@ body {
   
   .button-section input[type="submit"]:hover,
   .button-section input[type="button"]:hover {
-    background-color: #45a049;
+    background-color:  #288f8f;
   }
   
