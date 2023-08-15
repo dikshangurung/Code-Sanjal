@@ -443,14 +443,14 @@
     height: 12rem;
     border-radius: 1rem;
     background-color: #102e44;
-    color: #39cccc;
+    color: var(--secondary-color);
     font-size: 2rem;
     text-align: center;
     padding-top: 3.1rem;
     cursor: pointer;
   }
   .box:hover {
-    box-shadow: 0 0 10px 5px rgba(57, 204, 204, 0.8);
+    box-shadow: 0 0 10px 5px var(--secondary-color);
   }
   
   .content_box {
