@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Code Sanjal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link href="../css/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -93,6 +98,7 @@
       </nav>
     </header>
 
+    <!-- ----------------------------------------main1----------------------------- -->
     <main class="main1">
       <section class="search_area">
         <section class="search_content">
@@ -122,7 +128,12 @@
           </section>
         </section>
       </section>
+
       <section class="code_area">
+        <div class="top-slider">
+          <a class="prev-button" href="#"><button>&ltPrevious Page</button></a>
+          <a class="next-button" href="#"><button>Next Page&gt</button></a>
+        </div>
         <section class="code_container">
           <aside class="left_container">
             <div class="code_box">
@@ -135,7 +146,7 @@
                 <h2>2023/06/20</h2>
               </div>
               <div class="code_section">
-                <img src="../images/javascript.png" />
+                <img src="../images/language_images/javascript.png" />
               </div>
               <div class="review_section">
                 <h2 class="upvote_text">
@@ -163,6 +174,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -173,7 +185,7 @@
                 <h2>2023/06/20</h2>
               </div>
               <div class="code_section">
-                <img src="../images/javascript.png" />
+                <img src="../images/language_images/javascript.png" />
               </div>
               <div class="review_section">
                 <h2 class="upvote_text">
@@ -201,6 +213,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -211,7 +224,7 @@
                 <h2>2023/06/20</h2>
               </div>
               <div class="code_section">
-                <img src="../images/javascript.png" />
+                <img src="../images/language_images/javascript.png" />
               </div>
               <div class="review_section">
                 <h2 class="upvote_text">
@@ -239,6 +252,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -249,7 +263,7 @@
                 <h2>2023/06/20</h2>
               </div>
               <div class="code_section">
-                <img src="../images/javascript.png" />
+                <img src="../images/language_images/javascript.png" />
               </div>
               <div class="review_section">
                 <h2 class="upvote_text">
@@ -277,6 +291,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -287,7 +302,7 @@
                 <h2>2023/06/20</h2>
               </div>
               <div class="code_section">
-                <img src="../images/javascript.png" />
+                <img src="../images/language_images/javascript.png" />
               </div>
               <div class="review_section">
                 <h2 class="upvote_text">
@@ -316,47 +331,72 @@
               </div>
             </div>
           </aside>
+
           <aside class="right_container">
             <h1>Filter:</h1>
+            <div class="page">
+              <h2>Per page:</h2>
+              <div class="perPage">
+                <span id="rangeValue" class="rangeValue">0</span>
+                <input
+                  class="range"
+                  type="range"
+                  name=""
+                  value="0"
+                  min="0"
+                  max="20"
+                  onchange="rangeSlide(this.value)"
+                  onmousemove="rangeSlide(this.value)"
+                />
+              </div>
+            </div>
+
             <h2>Language:</h2>
             <select id="myDropdown">
-              <option value="C">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
+              <option value="C">C++</option>
+              <option value="option2">Javascript</option>
+              <option value="option3">Css</option>
+              <option value="option4">Html</option>
             </select>
             <h2>Date:</h2>
             <select id="myDropdown">
-              <option value="C">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
+              <option value="option4">New</option>
+              <option value="C">Old</option>
             </select>
             <br />
             <h2>Type:</h2>
             <select id="myDropdown">
-              <option value="C">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-              <option value="option4">Option 4</option>
+              <option value="option3">All</option>
+              <option value="C">Verified</option>
+              <option value="option2">Error</option>
             </select>
+            <div>
+              <input class="filter" type="submit" />
+            </div>
           </aside>
         </section>
       </section>
     </main>
-
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Main 2----------------------------------------------------------------------------------------------------------------------------------------------->
     <main class="main2">
-      <section class="user_portfolio">
+      <section class="user_portfolio" class="blur">
         <aside class="cleft">
           <div class="user_data">
             <img src="../images/dp.JPG" />
             <h1>Dikshan Gurung</h1>
             <h2>15 upvotes</h2>
             <h2>25 comments</h2>
+            <div class="socials">
+              <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">github</a></li>
+                <li><a href="">Website</a></li>
+              </ul>
+            </div>
             <div class="edit_profile">Edit Profile</div>
           </div>
         </aside>
+
         <aside class="cright">
           <div class="user_content">
             <div class="boxes">
@@ -390,7 +430,7 @@
                     <h2>2023/06/20</h2>
                   </div>
                   <div class="code_section">
-                    <img src="../images/javascript.png" />
+                    <img src="../images/language_images/javascript.png" />
                   </div>
                   <div class="review_section">
                     <h2 class="upvote_text">
@@ -430,7 +470,7 @@
                     <h2>2023/06/20</h2>
                   </div>
                   <div class="code_section">
-                    <img src="../images/javascript.png" />
+                    <img src="../images/language_images/javascript.png" />
                   </div>
                   <div class="review_section">
                     <h2 class="upvote_text">
@@ -470,7 +510,7 @@
                     <h2>2023/06/20</h2>
                   </div>
                   <div class="code_section">
-                    <img src="../images/javascript.png" />
+                    <img src="../images/language_images/javascript.png" />
                   </div>
                   <div class="review_section">
                     <h2 class="upvote_text">
@@ -513,7 +553,7 @@
                     <h2>2023/06/20</h2>
                   </div>
                   <div class="code_section">
-                    <img src="../images/javascript.png" />
+                    <img src="../images/language_images/javascript.png" />
                   </div>
                   <div class="review_section">
                     <h2 class="upvote_text">
@@ -609,6 +649,40 @@
             </div>
           </div>
         </aside>
+        <div class="edit_profile_option">
+          <form>
+            <h1>Edit Profile</h1>
+            <label
+              for="show"
+              class="close_btn fas fa-times"
+              title="close"
+            ></label>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <div class="social-media-section">
+              <label for="linkedin">LinkedIn:</label>
+              <input type="text" id="linkedin" name="linkedin" />
+
+              <label for="github">github:</label>
+              <input type="text" id="github" name="github" />
+
+              <label for="website">Website:</label>
+              <input type="text" id="website" name="website" />
+            </div>
+
+            <label for="user-photo">User Photo:</label>
+            <input type="file" id="user-photo" name="user-photo" />
+
+            <div class="button-section">
+              <input type="submit" value="Submit" />
+              <input type="button" value="Cancel" id="cancel" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Main 3----------------------------------------------------------------------------------------------------------------------------------------------->

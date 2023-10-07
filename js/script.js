@@ -120,8 +120,12 @@ codeBoxes.forEach((codeBox) => {
   observer.observe(codeBox);
 });
 
-/*--------------------Cright profile Section-----------------*/
-/*Switches */
+/*-------------------- profile Section-----------------*/
+/*-----------------cleft profile switches----------------*/
+const cleft = document.querySelector(".cleft");
+
+/*-------------cright Switches---------- */
+const user_content = document.querySelector(".user_content");
 const code_content = document.querySelector(".code_content");
 const verified_content = document.querySelector(".verified_content");
 const notification_content = document.querySelector(".notification_content");
@@ -130,32 +134,73 @@ const codes_box = document.querySelector(".codes_box");
 const verified_box = document.querySelector(".verified_box");
 const notification_box = document.querySelector(".notification_box");
 const moderator_req = document.querySelector(".moderator_req");
-
+const edit_profile = document.querySelector(".edit_profile");
+const edit_profile_option = document.querySelector(".edit_profile_option");
+const close_btn = document.querySelector(".close_btn");
+const cancel_btn = document.getElementById("cancel");
 codes_box.addEventListener("click", function () {
+  user_content.style.display = "block";
   code_content.style.display = "block";
   verified_content.style.display = "none";
   notification_content.style.display = "none";
   moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "none";
 });
 verified_box.addEventListener("click", function () {
+  user_content.style.display = "block";
   code_content.style.display = "none";
   verified_content.style.display = "block";
   notification_content.style.display = "none";
   moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "none";
 });
 
 notification_box.addEventListener("click", function () {
+  user_content.style.display = "block";
   code_content.style.display = "none";
   verified_content.style.display = "none";
   notification_content.style.display = "block";
   moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "none";
 });
 
 moderator_req.addEventListener("click", function () {
+  user_content.style.display = "block";
   code_content.style.display = "none";
   verified_content.style.display = "none";
   notification_content.style.display = "none";
   moderator_req_content.style.display = "block";
+  edit_profile_option.style.display = "none";
+});
+
+edit_profile.addEventListener("click", function () {
+  // alert("ok");
+  // user_content.style.display = "none";
+  // code_content.style.display = "none";
+  // verified_content.style.display = "none";
+  // notification_content.style.display = "none";
+  // moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "block";
+  // cleft.style.display = "none";
+});
+
+close_btn.addEventListener("click", function () {
+  user_content.style.display = "block";
+  code_content.style.display = "block";
+  verified_content.style.display = "none";
+  notification_content.style.display = "none";
+  moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "none";
+  // cleft.style.display = "block";
+});
+cancel_btn.addEventListener("click", function () {
+  user_content.style.display = "block";
+  code_content.style.display = "block";
+  verified_content.style.display = "none";
+  notification_content.style.display = "none";
+  moderator_req_content.style.display = "none";
+  edit_profile_option.style.display = "none";
+  // cleft.style.display = "block";
 });
 
 /*--------------------Notification ----------------------------------------------------------------------- */

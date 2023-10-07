@@ -8,40 +8,43 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
-  <body class="edit_profile">
-    <h1>Edit Profile</h1>
-    <form>
-      <label
+
+  <body>
+    <main class="main4">
+      <div class="edit_profile_option">
+        <form>
+          <h1>Edit Profile</h1>
+          <label
             for="show"
             class="close-btn fas fa-times"
             title="close"
           ></label>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-      <div class="social-media-section">
-       
-        <label for="linkedin">LinkedIn:</label>
-        <input type="text" id="linkedin" name="linkedin" />
+          <div class="social-media-section">
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" id="linkedin" name="linkedin" />
 
-        <label for="github">github:</label>
-        <input type="text" id="github" name="github" />
+            <label for="github">github:</label>
+            <input type="text" id="github" name="github" />
 
-        <label for="website">Website:</label>
-        <input type="text" id="website" name="website" />
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" />
+          </div>
+
+          <label for="user-photo">User Photo:</label>
+          <input type="file" id="user-photo" name="user-photo" />
+
+          <div class="button-section">
+            <input type="submit" value="Submit" />
+            <input type="button" value="Cancel" />
+          </div>
+        </form>
       </div>
-
-      <label for="user-photo">User Photo:</label>
-      <input type="file" id="user-photo" name="user-photo" />
-
-      <div class="button-section">
-        <input type="submit" value="Submit" />
-        <input type="button" value="Cancel" />
-      </div>
-    </form>
-  </div>
+    </main>
   </body>
 </html>
