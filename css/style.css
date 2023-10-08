@@ -507,8 +507,36 @@ footer {
   text-align: center;
   padding: 0.5rem 0 0.5rem 0;
   cursor: pointer;
-  /* background-color: var(--primary-color); */
 }
+
+/* Style the social links */
+.social {
+  display: flex;
+}
+
+.social-icon {
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.social-icon img {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.2s;
+}
+
+.social-icon img:hover {
+  transform: scale(0.9); /* Add a simple hover effect */
+}
+
+.social_web {
+  margin-top: -1rem;
+}
+
 /* -----cleft switches---------  */
 .cleft {
   display: block;
